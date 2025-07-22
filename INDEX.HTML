@@ -1,0 +1,220 @@
+   <!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atividade Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    .social-icons {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 30px; /* espaçamento entre ícones */
+  margin: 40px 0 60px 0;
+}
+.social-icons a {
+  color: #333;
+  font-size: 2.5rem;
+  transition: color 0.3s ease;
+}
+.social-icons a:hover {
+  color: #cc0606; /* azul bootstrap */
+}
+@media (max-width: 576px) {
+  .social-icons a {
+    font-size: 2rem;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre"
+                >Sobre Mim</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <img
+            src=""
+            class="img-fluid rounded"
+            alt="Foto do autor"
+          />
+        </div>
+        <div class="col-md-8">
+          <h2>Olá, sou o joao!</h2>
+          <p>
+            Sou um entusiasta de tecnologia, apaixonado por programação e sempre buscando aprender algo novo todos os dias, seja criando projetos, explorando novas linguagens ou resolvendo desafios que me ajudam a evoluir como desenvolvedor e como pessoa.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 pt-5">
+      <h2 class="mt-5 pt-5">Projetos</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img
+              src="230616-Ja-Morant-ew-1140a-e820fa.webp"
+              class="card-img-top"
+              alt="Foto do projeto"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Projeto Simples</h5>
+              <p class="card-text">
+                Projeto Formulário de Cadastro: Desenvolvimento de um formulário completo e responsivo para cadastro de usuários, utilizando HTML e CSS com campos validados, focado em treinar boas práticas de acessibilidade e organização de formulários em sites.
+              </p>
+              <a href="#" class="btn btn-primary">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="rose.jpg"
+              class="card-img-top"
+              alt="Foto do projeto"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Projeto Bom</h5>
+              <p class="card-text">
+                Projeto Site de Venda de Carros: Criação de um site fictício de compra e venda de veículos, com layout moderno e responsivo, simulando filtros de pesquisa por marca, modelo e ano, ideal para treinar HTML, CSS e JavaScript em um projeto realista.
+              </p>
+              <a href="#" class="btn btn-primary">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="poole-e1750802454421.webp"
+              class="card-img-top"
+              alt="Foto do projeto"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Projeto Ótimo</h5>
+              <p class="card-text">
+                Projeto de Batalha Medieval Fortnite: Um jogo de batalha interativa onde os jogadores utilizam skins do Fortnite em um cenário medieval, enfrentando desafios, ataques e defesas para treinar lógica de programação e estrutura de dados de forma divertida.
+              </p>
+              <a href="#" class="btn btn-primary">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 pt-5" id="contato">
+      <h2>Contato</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nome</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Seu Nome"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="nome@exemplo.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensagem</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="3"
+            placeholder="Digite sua mensagem"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Seção de redes sociais -->
+    <div class="container social-icons">
+      <a
+        href="https://facebook.com/seuperfil"
+        target="_blank"
+        aria-label="Facebook"
+        ><i class="bi bi-facebook"></i
+      ></a>
+      <a
+        href="https://instagram.com/seuperfil"
+        target="_blank"
+        aria-label="Instagram"
+        ><i class="bi bi-instagram"></i
+      ></a>
+      <a
+        href="https://linkedin.com/in/seuperfil"
+        target="_blank"
+        aria-label="LinkedIn"
+        ><i class="bi bi-linkedin"></i
+      ></a>
+      <a
+        href="https://twitter.com/seuperfil"
+        target="_blank"
+        aria-label="Twitter"
+        ><i class="bi bi-twitter"></i
+      ></a>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
